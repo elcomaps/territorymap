@@ -1,0 +1,28 @@
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+#main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-wrapper {
+    background: $body-bg;
+    position: relative;
+    transition: 0.2s ease-in;
+    display: none;
+}
+
+.page-wrapper>.container-fluid {
+    padding: 40px 20px;
+    min-height: calc(100vh - 180px);
+}
+
+/*******************
+ Footer
+*******************/
+
+.footer {
+    padding: 15px 20px;
+}

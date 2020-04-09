@@ -1,0 +1,119 @@
+/*******************
+ General Topbar
+*******************/
+
+.topbar {
+    position: relative;
+    z-index: 50;
+    transition: $transitions;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
+    background: $white;
+    height: $topbar-height;
+
+    .navbar-collapse {
+        padding: 0px 10px 0 0;
+        background: $white;
+    }
+
+    .top-navbar {
+        min-height: $topbar-height;
+
+        .navbar-header {
+            line-height: $topbar-navlink-height;
+
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                padding: $topbar-navbrand-padding;
+            }
+        }
+
+        .navbar-nav>.nav-item>.nav-link {
+            padding: $topbar-navlink-padding;
+            font-size: $topbar-navlink-font-size;
+            line-height: $topbar-navlink-height;
+            height: $topbar-navlink-height;
+
+            .noti {
+                position: absolute;
+                top: 13px;
+                left: 28px;
+                font-size: 60%;
+            }
+        }
+
+        .navbar-nav>.nav-item {
+            transition: 0.2s ease-in;
+        }
+    }
+
+    .topbartoggler {
+        color: $dark;
+        padding: 0 15px;
+    }
+
+    .user-dd {
+        position: relative;
+
+        .name {
+            position: relative;
+            top: -7px;
+        }
+
+        .role {
+            position: absolute;
+            top: 11px;
+        }
+    }
+}
+
+/*******************
+Topbar Responsive
+******************/
+
+@media (max-width: 991px) {
+    .topbar {
+        .top-navbar {
+            padding: 0;
+
+            .navbar-header {
+                line-height: 80px;
+            }
+
+            .navbar-nav>.nav-item>.nav-link {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .topbar .top-navbar {
+
+        .navbar-collapse.show,
+        .navbar-collapse.collapsing {
+            display: block;
+            width: 100%;
+            border-top: 1px solid $border-color;
+            box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-nav>.nav-item>.nav-link {
+            padding: 0 10px;
+        }
+
+        .navbar-header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            width: 100%;
+        }
+
+    }
+}

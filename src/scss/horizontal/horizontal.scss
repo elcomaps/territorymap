@@ -1,0 +1,34 @@
+/****************************
+This is for the horizontal layout
+***************************/
+
+@include media-breakpoint-up(md) {
+    #main-wrapper[data-layout="horizontal"] {
+        background: $body-bg;
+
+        .topbar {
+            transition: 0s;
+        }
+
+        /****************************
+        This is for the Boxed horizontal layout
+        ***************************/
+        &[data-boxed-layout="boxed"] {
+
+            .top-navbar,
+            .page-wrapper {
+                max-width: $boxed-width;
+                margin: 0 auto;
+                position: relative;
+            }
+        }
+
+        /****************************
+        This is for the horizontal layout
+        ***************************/
+        .topbar .top-navbar .navbar-header {
+            width: 230px;
+            border-right: 1px solid $border-color;
+        }
+    }
+}

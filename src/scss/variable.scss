@@ -1,0 +1,173 @@
+// Custom Variables
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+
+/*Topbar Colors*/
+
+$topbar-height:80px;
+$topbar-navlink-padding:0px 18px;
+$topbar-navlink-font-size:1rem;
+$topbar-navlink-height:64px;
+$topbar-navbrand-padding:0 10px 0 10px;
+
+$themecolor: #327ee2;
+
+$transitions:0.2s ease-in;
+
+$boxed-width:1200px;
+
+%square {
+    border-radius: 0px
+}
+
+%rotate45 {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+
+// Bootstrap overrides
+
+// Color system
+
+$white: #fff !default;
+$gray-100: #f9fbfd !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #a1aab2 !default;
+$gray-600: #6c757d !default;
+$gray-700: #4F5467 !default;
+$gray-800: #1c2d41 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #327ee2 !default;
+$indigo: #6610f2 !default;
+$purple: #7460ee !default;
+$pink: #e83e8c !default;
+$red: #f5326e !default;
+$orange: #fb8c00 !default;
+$yellow: #ffab2e !default;
+$green: #02cccd !default;
+$teal: #20c997 !default;
+$cyan: #4fc3f7 !default;
+$text-muted: $gray-500 !default;
+
+$colors: (blue: $blue,
+indigo: $indigo,
+purple: $purple,
+pink: $pink,
+red: $red,
+orange: $orange,
+yellow: $yellow,
+green: $green,
+teal: $teal,
+cyan: $cyan,
+white: $white,
+gray: $gray-600,
+gray-dark: $gray-800);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$cyan: $cyan !default;
+$orange: $orange !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(("primary": $primary,
+"secondary": $secondary,
+"success": $success,
+"info": $info,
+"warning": $warning,
+"danger": $danger,
+"light": $light,
+"dark": $dark,
+"cyan": $cyan,
+"orange": $orange,
+"purple": $purple),
+$theme-colors);
+
+
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+
+// Body
+//
+// Settings for the  element.
+$main-body-bg: #fff !default;
+$body-bg: #f9fbfd;
+$body-color: #8593a9 !default;
+$grid-gutter-width: 35px !default;
+
+$border-color: #e9edf2 !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base: 1rem;
+$font-family-sans-serif: 'Rubik',
+sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+$headings-margin-bottom: (1rem / 2) !default;
+$headings-font-weight: 500 !default;
+$headings-color: #1c2d41 !default;
+
+//forms
+
+$custom-control-indicator-active-bg: rgba(0, 0, 0, 35%) !default;
+$custom-select-indicator: url(../../assets/images/custom-select.png) !default;
+$custom-select-focus-box-shadow: transparent !default;
+$custom-select-indicator: str-replace(url(''), '%23') !default;
+$custom-select-border-width: 1px !default;
+$input-border-color: $border-color !default;
+$input-color: $body-color !default;
+
+// Cards
+$card-border-width: 0px !default;
+$card-border-color: transparent !default;
+$card-border-radius: 5px !default;
+
+// Dropdowns
+$dropdown-min-width: 250px !default;
+$dropdown-border-radius: 0 !default;
+$dropdown-border-width: 0 !default;
+$dropdown-item-padding-x: 0 !default;
+$dropdown-item-padding-y: 12px !default;
+$dropdown-link-color: $body-color !default;
+$dropdown-link-hover-color: $primary !default;
+$dropdown-link-hover-bg: transparent !default;
+$dropdown-link-active-color: $primary !default;
+$dropdown-link-active-bg: transparent !default;
+
+//Navbar
+$navbar-light-color: #8593a9 !default;
+$navbar-light-hover-color: $primary !default;
+$navbar-light-active-color: $primary !default;

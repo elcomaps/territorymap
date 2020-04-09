@@ -1,0 +1,48 @@
+@import '../variable.scss';
+
+.new-login-register {
+    height: 100vh;
+    background: $body-bg;
+    overflow: auto;
+
+
+
+    .info-panel {
+        background: url(../../assets/images/background/login-register.jpg) no-repeat center center / cover !important;
+        width: 100%;
+        //height: 100vh;
+
+        .inner-panel {
+            padding: 50px;
+            height: 100vh;
+        }
+
+        .date-time {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .login-form-panel {
+        height: 100vh;
+    }
+
+    .login-form-panel,
+    .register-form-panel {
+        width: 100%;
+        padding: 40px 20px 20px;
+
+        #loginform {
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .new-login-register {
+        .register-form-panel {
+            height: 100vh;
+        }
+    }
+}

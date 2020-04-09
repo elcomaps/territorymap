@@ -1,0 +1,23 @@
+//(Required file)
+@import 'variable';
+
+// Import Bootstrap source files (Required file)
+@import "bootstrap/bootstrap";
+
+// core
+@import 'core/core';
+
+// core
+@import 'components/components';
+
+//This is for the horizontal version if you are not using horizontal version you can remove this
+@import 'horizontal/horizontal';
+
+//pages
+@import 'pages/pages';
+
+//In This scss you can write your scss
+@import 'custom';
+
+//This is for the icons (Required file)
+@import 'icons/font-awesome/css/fontawesome-all.css';

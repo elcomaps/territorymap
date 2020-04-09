@@ -1,0 +1,40 @@
+// The dropdown menu
+.dropdown-menu {
+    padding: 18px 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid $primary;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border: 0;
+    }
+
+    &.active {
+        font-weight: 500;
+    }
+}
+
+.dropdown-toggle::after,
+.dropdown-toggle::before {
+    display: none !important;
+}
+
+.mega-dropdown {
+    position: static;
+
+    .dropdown-menu {
+        padding: 30px 0;
+        width: 100%;
+        max-height: 480px;
+        overflow: hidden;
+
+        .filter-form {
+            .form-row {
+                padding: 0 30px;
+            }
+        }
+    }
+}
